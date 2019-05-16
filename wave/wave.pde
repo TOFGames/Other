@@ -1,7 +1,7 @@
 Wave wave;
 
 void setup() {
-  size(800, 800);
+  size(1000, 1000);
   wave=new Wave(height/10,500, 2);
 }
 
