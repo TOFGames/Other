@@ -27,7 +27,6 @@ class Ball {
 
   float x;
   float y;
-  float s;
   float edgeSize=5;
 
   float alpha=100;
