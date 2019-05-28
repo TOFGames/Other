@@ -1,4 +1,5 @@
 ArrayList<Explosion> explosion=new ArrayList<Explosion>();
+Ball ball;
 
 void setup() {
   size(900, 900);
@@ -6,10 +7,13 @@ void setup() {
   rectMode(CENTER);
   
   setMusicSettings();
+  ball=new Ball(new PVector(width/2,height/2),30);
 }
 
 void draw() {
   background(0, 0, 0);
+  
+  ball.run();
 
   if (mousePressed&&explosion.size()==0) {
     explosion.add(new Explosion(new PVector(mouseX, mouseY)));
